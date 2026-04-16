@@ -2,11 +2,24 @@
 
 /* ======================== CSS Rule #1 */
 html {
-  background-color: white;
+  background-color: rgb(128, 63, 81);
   padding-left: 20px;
+  
+  font-family:'Courier New', Courier, monospace
+}
+
+body{
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+button{
+  color: rgb(128, 63, 81);
+  background-color: rgb(125, 212, 125);
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  
 }
