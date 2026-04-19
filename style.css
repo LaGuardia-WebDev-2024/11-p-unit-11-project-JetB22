@@ -1,25 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
-/* ======================== CSS Rule #1 */
 html {
   background-color: rgb(128, 63, 81);
-  padding-left: 20px;
-  
   font-family:'Courier New', Courier, monospace
+}
+
+img{
+  width: 50%;
+  height: 50%;
+  border-style: double;
+  border-radius: 10px;
+  border-color: rgb(125, 212, 125);
+  border-width: 3px;
 }
 
 body{
   margin: auto;
   text-align: center;
-  width: 50%;
+  width: 70%;
 }
 
 button{
+  margin-top: 20px;
   color: rgb(128, 63, 81);
   background-color: rgb(125, 212, 125);
 }
 
-/* ======================== CSS Rule #2 */
-h1 {
-  
+h1 {width: 75%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#secretCabbage2{
+  margin-top: 10px;
+  background-color: rgb(116, 0, 33);
+  color: rgb(125, 212, 125);
+}
+
+h3{
+  border-style: double;
+  border-radius: 10px;
+  border-color: rgb(125, 212, 125);
+  border-width: 3px;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(78, 18, 35);
+  color: rgb(125, 212, 125);
 }

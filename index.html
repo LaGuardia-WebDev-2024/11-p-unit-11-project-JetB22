@@ -1,16 +1,16 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[+] $() Select by Element, ID AND Class 
+[+] Use Three Different jQuery Methods 
+[+] Add Five CSS Declarations
+[+] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ Yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
-[ no ] Feature 5 - Use .fadeIn() method
+[ Yes ] Feature 5 - Use .fadeIn() method
 -->
 
 <!DOCTYPE html>
@@ -21,47 +21,63 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>Why <span>Lettuce</span> Is Great</h1>
-    <ol>
-      <li>
+    <button id="mem1-button">Reason #1</button>
+    <button id="mem2-button">Reason #2</button>
+    <button id="mem3-button">Reason #3</button>
+    <h1>Why <span class="secretCabbage">Lettuce</span> Is Great <br>
+      (A <span id="human">Hamsters</span> Perspective)</h1>
+    
         <h3 id="mem1">Reason #1</h3>
-        <p>More about this memory.</p>
-      </li>
+        <img id="imgMem1" src="LETTUCE 1.jpg" alt="LETTUCE">
 
-      <li>
         <h3 id="mem2">Reason #2</h3>
-        <p>More about this memory.</p>
-      </li>
+        <img id="imgMem2" src="LETTUCE 2.jpg" alt="LETTUCE">
 
-      <li>
         <h3 id="mem3">Reason #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
+        <img id="imgMem3" src="LETTUCE 3.jpg" alt="LETTUCE">
+
+        <br><button id="secretCabbage2">PRESS</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $("#secretCabbage2").hide();
+
       // ======================== Button #1
+      $("#mem1").hide();
+      $("#imgMem1").hide();
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $("#mem1").fadeIn(5000);
+      $("#imgMem1").show(5000);
       });
 
       // ======================== Button #2
+      $("#mem2").hide();
+      $("#imgMem2").hide();
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+      $("#mem2").fadeIn(5000);
+      $("#imgMem2").show(5000);
       });
 
       // ======================== Button #3
+      $("#mem3").hide();
+      $("#imgMem3").hide();
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+      $("#mem3").fadeIn(5000);
+      $("#imgMem3").show(5000);
+      $("#secretCabbage2").show(5000);
       });
 
-
+      // ======================== SECRET CABBAGE
+      $("#secretCabbage2").click(function () {
+      
+      $(".secretCabbage").text("CABBAGE");
+      $("#human").text("MERCHANT'S");
+      $('#imgMem1').attr('src','CABBAGE MERCHANT.jpg');
+      $('#imgMem2').attr('src','CABBAGE MERCHANT 1.jpg');
+      $('#imgMem3').attr('src','CABBAGE MERCHANT 2.jpg');
+      $("h3").text("MY CABBAGES");
+      });
     </script>
   </body>
 </html>
