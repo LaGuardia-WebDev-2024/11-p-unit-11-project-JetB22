@@ -17,7 +17,15 @@ img{
 body{
   margin: auto;
   text-align: center;
-  width: 70%;
+  width: 80%;
+  border-style: double;
+  border-radius: 10px;
+  border-color: rgb(125, 212, 125);
+  border-width: 5px;
+  background-color: rgb(78, 18, 35);
+  color: rgb(125, 212, 125);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button{
@@ -26,7 +34,7 @@ button{
   background-color: rgb(125, 212, 125);
 }
 
-h1 {width: 75%;
+h1 {width: 90%;
   margin: auto;
   margin-top: 20px;
 }

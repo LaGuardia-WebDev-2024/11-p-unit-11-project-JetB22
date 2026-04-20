@@ -26,7 +26,9 @@ Select ONE Additional
     <button id="mem3-button">Reason #3</button>
     <h1>Why <span class="secretCabbage">Lettuce</span> Is Great <br>
       (A <span id="human">Hamsters</span> Perspective)</h1>
-    
+      
+    <br><button id="secretCabbage2">PRESS</button>
+
         <h3 id="mem1">Reason #1</h3>
         <img id="imgMem1" src="LETTUCE 1.jpg" alt="LETTUCE">
 
@@ -36,8 +38,7 @@ Select ONE Additional
         <h3 id="mem3">Reason #3</h3>
         <img id="imgMem3" src="LETTUCE 3.jpg" alt="LETTUCE">
 
-        <br><button id="secretCabbage2">PRESS</button>
-
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
@@ -70,13 +71,12 @@ Select ONE Additional
 
       // ======================== SECRET CABBAGE
       $("#secretCabbage2").click(function () {
-      
-      $(".secretCabbage").text("CABBAGE");
-      $("#human").text("MERCHANT'S");
-      $('#imgMem1').attr('src','CABBAGE MERCHANT.jpg');
-      $('#imgMem2').attr('src','CABBAGE MERCHANT 1.jpg');
-      $('#imgMem3').attr('src','CABBAGE MERCHANT 2.jpg');
-      $("h3").text("MY CABBAGES");
+      $(".secretCabbage").hide().text("CABBAGE").fadeIn(5000);
+      $("#human").hide().text("MERCHANT'S").fadeIn(5000);
+      $('#imgMem1').hide().attr('src','CABBAGE MERCHANT.jpg').fadeIn(5000)
+      $('#imgMem2').hide().attr('src','CABBAGE MERCHANT 1.jpg').fadeIn(5000);
+      $('#imgMem3').hide().attr('src','CABBAGE MERCHANT 2.jpg').fadeIn(5000);
+      $("h3").hide().text("MY CABBAGES").fadeIn(5000);
       });
     </script>
   </body>
